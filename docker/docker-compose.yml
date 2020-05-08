@@ -1,0 +1,9 @@
+version: '2'
+services:
+  jesse:
+    build:
+      context: ..
+      dockerfile: './docker/Dockerfile'
+    command: 'sudo service postgresql start'
+    volumes:
+    - '..:/code'
